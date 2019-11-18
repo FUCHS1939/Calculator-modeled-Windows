@@ -1,0 +1,14 @@
+D:\文档\GitHub\Calculator-modeled-Windows\Calculator-modeled-Windows\bin\Debug\Calculator-modeled-Windows.exe.config
+D:\文档\GitHub\Calculator-modeled-Windows\Calculator-modeled-Windows\bin\Debug\Calculator-modeled-Windows.exe
+D:\文档\GitHub\Calculator-modeled-Windows\Calculator-modeled-Windows\bin\Debug\Calculator-modeled-Windows.pdb
+D:\文档\GitHub\Calculator-modeled-Windows\Calculator-modeled-Windows\obj\Debug\Calculator-modeled-Windows.csprojAssemblyReference.cache
+D:\文档\GitHub\Calculator-modeled-Windows\Calculator-modeled-Windows\obj\Debug\MainWindow.g.cs
+D:\文档\GitHub\Calculator-modeled-Windows\Calculator-modeled-Windows\obj\Debug\App.g.cs
+D:\文档\GitHub\Calculator-modeled-Windows\Calculator-modeled-Windows\obj\Debug\Calculator-modeled-Windows_MarkupCompile.cache
+D:\文档\GitHub\Calculator-modeled-Windows\Calculator-modeled-Windows\obj\Debug\Calculator-modeled-Windows_MarkupCompile.lref
+D:\文档\GitHub\Calculator-modeled-Windows\Calculator-modeled-Windows\obj\Debug\MainWindow.baml
+D:\文档\GitHub\Calculator-modeled-Windows\Calculator-modeled-Windows\obj\Debug\Calculator-modeled-Windows.g.resources
+D:\文档\GitHub\Calculator-modeled-Windows\Calculator-modeled-Windows\obj\Debug\Calculator_modeled_Windows.Properties.Resources.resources
+D:\文档\GitHub\Calculator-modeled-Windows\Calculator-modeled-Windows\obj\Debug\Calculator-modeled-Windows.csproj.GenerateResource.cache
+D:\文档\GitHub\Calculator-modeled-Windows\Calculator-modeled-Windows\obj\Debug\Calculator-modeled-Windows.exe
+D:\文档\GitHub\Calculator-modeled-Windows\Calculator-modeled-Windows\obj\Debug\Calculator-modeled-Windows.pdb
