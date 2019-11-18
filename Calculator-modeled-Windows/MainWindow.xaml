@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:Calculator_modeled_Windows"
         mc:Ignorable="d"
         ResizeMode="NoResize"
-        Title="MainWindow" Height="490" Width="660">
+        Title="MainWindow" Height="490" Width="675">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="380"/>
@@ -175,6 +175,7 @@
                         BorderBrush="#FFD1D1D1"/>
             </WrapPanel>
         </Grid>
+        <!--历史记录区-->
         <StackPanel Orientation="Vertical" 
                     Grid.Column="1"
                     Background="#FFF0F0F0">
@@ -184,10 +185,20 @@
                        FontWeight="Black"
                        FontFamily="微软雅黑"/>
             <ListView Name="History"
-                      Height="408"
+                      Height="379"
                       Background="#FFF0F0F0" 
                       BorderBrush="{x:Null}" >
             </ListView>
+            <Button Name="DeleteHistory_Button"
+                    HorizontalAlignment="Right"
+                    Margin="0,0,10,0"
+                    Height="30" 
+                    Width="30" 
+                    Content="&#xe74d;" 
+                    FontFamily="Segoe MDL2 Assets"
+                    FontSize="20"
+                    Background="#FFF0F0F0" 
+                    BorderBrush="{x:Null}"/>
         </StackPanel>
     </Grid>
 </Window>
