@@ -20,9 +20,21 @@
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
             <!--显示输入结果-->
-            <Border Background="#FFF0F0F0">
-
-            </Border>
+            <StackPanel Background="#FFF0F0F0">
+                <TextBlock Name="itissmallnum"
+                           Text="" 
+                           FontSize="18"
+                           TextAlignment="Right"
+                           FontFamily="微软雅黑 Light"
+                           HorizontalAlignment="Right"
+                           Margin="0,15,20,0"/>
+                <TextBlock Name="itisbignum"
+                           Text=""
+                           FontSize="64"
+                           TextAlignment="Right"
+                           HorizontalAlignment="Right"
+                           Margin="0,5,10,0"/>
+            </StackPanel>
             <!--按键面板-->
             <WrapPanel Grid.Row="1">
                 <Button Name="CE_Button"
@@ -45,7 +57,8 @@
                         Content="&#xe94f;" 
                         FontFamily="Segoe MDL2 Assets"
                         FontSize="20"
-                        BorderBrush="#FFD1D1D1"/>
+                        BorderBrush="#FFD1D1D1"
+                        Click="Delete_Button_Click"/>
                 <Button Name="Division_Button"
                         Height="58" 
                         Width="95" 
@@ -57,26 +70,29 @@
                         Height="58" 
                         Width="95" 
                         Content="7" 
-                        FontFamily="微软雅黑 Light"
+                        FontFamily="微软雅黑"
                         FontSize="20"
                         BorderBrush="#FFD1D1D1" 
-                        Background="#FFF0F0F0"/>
+                        Background="#FFF0F0F0"
+                        Click="NumButtonClicked"/>
                 <Button Name="Eight_Button"
                         Height="58" 
                         Width="95" 
                         Content="8" 
-                        FontFamily="微软雅黑 Light"
+                        FontFamily="微软雅黑"
                         FontSize="20"
                         BorderBrush="#FFD1D1D1"
-                        Background="#FFF0F0F0"/>
+                        Background="#FFF0F0F0"
+                        Click="NumButtonClicked"/>
                 <Button Name="Nine_Button"
                         Height="58" 
                         Width="95" 
                         Content="9" 
-                        FontFamily="微软雅黑 Light"
+                        FontFamily="微软雅黑"
                         FontSize="20"
                         BorderBrush="#FFD1D1D1"
-                        Background="#FFF0F0F0"/>
+                        Background="#FFF0F0F0"
+                        Click="NumButtonClicked"/>
                 <Button Name="Multiplication_Button"
                         Height="58" 
                         Width="95" 
@@ -88,26 +104,29 @@
                         Height="58" 
                         Width="95" 
                         Content="4" 
-                        FontFamily="微软雅黑 Light"
+                        FontFamily="微软雅黑"
                         FontSize="20"
                         BorderBrush="#FFD1D1D1"
-                        Background="#FFF0F0F0"/>
+                        Background="#FFF0F0F0"
+                        Click="NumButtonClicked"/>
                 <Button Name="Five_Button"
                         Height="58" 
                         Width="95" 
                         Content="5" 
-                        FontFamily="微软雅黑 Light"
+                        FontFamily="微软雅黑"
                         FontSize="20"
                         BorderBrush="#FFD1D1D1"
-                        Background="#FFF0F0F0"/>
+                        Background="#FFF0F0F0"
+                        Click="NumButtonClicked"/>
                 <Button Name="Six_Button"
                         Height="58" 
                         Width="95" 
                         Content="6" 
-                        FontFamily="微软雅黑 Light"
+                        FontFamily="微软雅黑"
                         FontSize="20"
                         BorderBrush="#FFD1D1D1"
-                        Background="#FFF0F0F0"/>
+                        Background="#FFF0F0F0"
+                        Click="NumButtonClicked"/>
                 <Button Name="Minus_Button"
                         Height="58" 
                         Width="95" 
@@ -119,26 +138,29 @@
                         Height="58" 
                         Width="95" 
                         Content="1" 
-                        FontFamily="微软雅黑 Light"
+                        FontFamily="微软雅黑"
                         FontSize="20"
                         BorderBrush="#FFD1D1D1"
-                        Background="#FFF0F0F0"/>
+                        Background="#FFF0F0F0"
+                        Click="NumButtonClicked"/>
                 <Button Name="Two_Button"
                         Height="58" 
                         Width="95" 
                         Content="2" 
-                        FontFamily="微软雅黑 Light"
+                        FontFamily="微软雅黑"
                         FontSize="20"
                         BorderBrush="#FFD1D1D1"
-                        Background="#FFF0F0F0"/>
+                        Background="#FFF0F0F0"
+                        Click="NumButtonClicked"/>
                 <Button Name="Three_Button"
                         Height="58" 
                         Width="95" 
                         Content="3" 
-                        FontFamily="微软雅黑 Light"
+                        FontFamily="微软雅黑"
                         FontSize="20"
                         BorderBrush="#FFD1D1D1"
-                        Background="#FFF0F0F0"/>
+                        Background="#FFF0F0F0"
+                        Click="NumButtonClicked"/>
                 <Button Name="Plus_Button"
                         Height="58" 
                         Width="95" 
@@ -157,17 +179,19 @@
                         Height="58" 
                         Width="95" 
                         Content="0" 
-                        FontFamily="微软雅黑 Light"
+                        FontFamily="微软雅黑"
                         FontSize="20"
                         BorderBrush="#FFD1D1D1"
-                        Background="#FFF0F0F0"/>
+                        Background="#FFF0F0F0"
+                        Click="NumButtonClicked"/>
                 <Button Name="Radixpoint_Button"
                         Height="58" 
                         Width="95" 
                         Content="." 
-                        FontFamily="微软雅黑 Light"
+                        FontFamily="微软雅黑"
                         FontSize="20"
-                        BorderBrush="#FFD1D1D1"/>
+                        BorderBrush="#FFD1D1D1"
+                        Click="NumButtonClicked"/>
                 <Button Name="Equal_Button"
                         Height="58" 
                         Width="95" 
@@ -189,7 +213,7 @@
             <ListView Name="History"
                       Height="379"
                       Background="#FFF0F0F0" 
-                      BorderBrush="{x:Null}" >
+                      BorderBrush="{x:Null}">
             </ListView>
             <Button Name="DeleteHistory_Button"
                     HorizontalAlignment="Right"
@@ -200,7 +224,8 @@
                     FontFamily="Segoe MDL2 Assets"
                     FontSize="20"
                     Background="#FFF0F0F0" 
-                    BorderBrush="{x:Null}"/>
+                    BorderBrush="{x:Null}"
+                    Click="DeleteHistory_Button_Click"/>
         </StackPanel>
     </Grid>
 </Window>
