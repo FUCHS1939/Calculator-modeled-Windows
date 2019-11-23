@@ -22,14 +22,14 @@
             <!--显示输入结果-->
             <StackPanel Background="#FFF0F0F0">
                 <TextBlock Name="itissmallnum"
-                           Text="" 
+                           Text="0" 
                            FontSize="18"
                            TextAlignment="Right"
                            FontFamily="微软雅黑 Light"
                            HorizontalAlignment="Right"
-                           Margin="0,15,20,0"/>
+                           Margin="0,15,20,0" Foreground="#FF464646"/>
                 <TextBlock Name="itisbignum"
-                           Text=""
+                           Text="0"
                            FontSize="64"
                            TextAlignment="Right"
                            HorizontalAlignment="Right"
@@ -43,14 +43,16 @@
                         Content="CE" 
                         FontFamily="微软雅黑 Light"
                         FontSize="20"
-                        BorderBrush="#FFD1D1D1"/>
+                        BorderBrush="#FFD1D1D1"
+                        Click="CE_Button_Click"/>
                 <Button Name="C_Button"
                         Height="58" 
                         Width="95" 
                         Content="C" 
                         FontFamily="微软雅黑 Light"
                         FontSize="20"
-                        BorderBrush="#FFD1D1D1"/>
+                        BorderBrush="#FFD1D1D1"
+                        Click="C_Button_Click"/>
                 <Button Name="Delete_Button"
                         Height="58" 
                         Width="95" 
@@ -65,7 +67,8 @@
                         Content="&#xe94a;" 
                         FontFamily="Segoe MDL2 Assets"
                         FontSize="20"
-                        BorderBrush="#FFD1D1D1"/>
+                        BorderBrush="#FFD1D1D1"
+                        Click="OperatorButtonClicked"/>
                 <Button Name="Seven_Button"
                         Height="58" 
                         Width="95" 
@@ -99,7 +102,8 @@
                         Content="&#xe947;" 
                         FontFamily="Segoe MDL2 Assets"
                         FontSize="20"
-                        BorderBrush="#FFD1D1D1"/>
+                        BorderBrush="#FFD1D1D1"
+                        Click="OperatorButtonClicked"/>
                 <Button Name="Four_Button"
                         Height="58" 
                         Width="95" 
@@ -133,7 +137,8 @@
                         Content="&#xe949;" 
                         FontFamily="Segoe MDL2 Assets"
                         FontSize="20"
-                        BorderBrush="#FFD1D1D1"/>
+                        BorderBrush="#FFD1D1D1"
+                        Click="OperatorButtonClicked"/>
                 <Button Name="One_Button"
                         Height="58" 
                         Width="95" 
@@ -167,14 +172,16 @@
                         Content="&#xe948;" 
                         FontFamily="Segoe MDL2 Assets"
                         FontSize="20"
-                        BorderBrush="#FFD1D1D1"/>
-                <Button Name="Percent_Button"
+                        BorderBrush="#FFD1D1D1"
+                        Click="OperatorButtonClicked"/>
+                <Button Name="NegativeNumber_Button"
                         Height="58" 
                         Width="95" 
-                        Content="&#xe94c;" 
+                        Content="&#xe94d;" 
                         FontFamily="Segoe MDL2 Assets"
                         FontSize="20"
-                        BorderBrush="#FFD1D1D1"/>
+                        BorderBrush="#FFD1D1D1"
+                        Click="NegativeNumber_Button_Click"/>
                 <Button Name="Zero_Button"
                         Height="58" 
                         Width="95" 
@@ -198,7 +205,8 @@
                         Content="&#xe94e;" 
                         FontFamily="Segoe MDL2 Assets"
                         FontSize="20"
-                        BorderBrush="#FFD1D1D1"/>
+                        BorderBrush="#FFD1D1D1"
+                        Click="Equal_Button_Click"/>
             </WrapPanel>
         </Grid>
         <!--历史记录区-->
@@ -210,11 +218,18 @@
                        FontSize="16"
                        FontWeight="Black"
                        FontFamily="微软雅黑"/>
-            <ListView Name="History"
-                      Height="379"
-                      Background="#FFF0F0F0" 
-                      BorderBrush="{x:Null}">
-            </ListView>
+            <Rectangle Height="2" 
+                       Width="63" 
+                       Margin="17,2,0,0" 
+                       HorizontalAlignment="Left"
+                       Fill="Black"/>
+            <ListBox Name="History"
+                     Height="371"
+                     FontSize="20"
+                     SelectionMode="Extended"
+                     Background="#FFF0F0F0" 
+                     BorderBrush="{x:Null}">
+            </ListBox>
             <Button Name="DeleteHistory_Button"
                     HorizontalAlignment="Right"
                     Margin="0,0,10,0"
